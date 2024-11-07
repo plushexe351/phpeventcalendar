@@ -1,0 +1,80 @@
+/* Container styling for padding and shadow */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #1c1d22;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  color: #b3b3b3;
+}
+h1 span {
+  color: blueviolet;
+}
+p {
+  color: white;
+  font-size: 1.1rem;
+}
+.table-container {
+  width: 90%;
+  border-radius: 1rem;
+  overflow: auto;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+table {
+  border-collapse: collapse;
+  background-color: #1a191f;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+/* Table header styling */
+thead tr {
+  background-color: black; /* Primary color */
+  color: white;
+}
+
+th,
+td {
+  padding: 2rem;
+  text-align: left;
+  font-size: 1.3rem;
+  color: white;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Last row in tbody without bottom border */
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Row hover effect */
+tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+/* Zebra-striping for rows */
+tbody tr:nth-child(even) {
+  background-color: #222129;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  th,
+  td {
+    padding: 12px;
+  }
+}
+
+button {
+  margin-block: 1rem;
+  cursor: pointer;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  background-color: white;
+  border: none;
+}
