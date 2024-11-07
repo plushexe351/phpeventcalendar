@@ -1,4 +1,3 @@
-/* Container styling for padding and shadow */
 body {
   display: flex;
   justify-content: center;
@@ -31,9 +30,8 @@ table {
   overflow: hidden;
 }
 
-/* Table header styling */
 thead tr {
-  background-color: black; /* Primary color */
+  background-color: black;
   color: white;
 }
 
@@ -46,22 +44,18 @@ td {
   border-bottom: 1px solid #e0e0e0;
 }
 
-/* Last row in tbody without bottom border */
 tbody tr:last-child td {
   border-bottom: none;
 }
 
-/* Row hover effect */
 tbody tr {
   transition: background-color 0.3s ease;
 }
 
-/* Zebra-striping for rows */
 tbody tr:nth-child(even) {
   background-color: #222129;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   th,
   td {
